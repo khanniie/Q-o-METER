@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>DOGOMETER, CATOMETER, ???-OMETER?</title>
+        <meta name="description" content="answering the age old question... which are more popular for photos?">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+        <!--<link rel="stylesheet" href="css/main.css"> -->
+        <style>
+            body{
+                background-color: black;
+            }
+            #loading{
+                position: absolute;
+                left: 40%;
+                top: 40%;
+                font-size: 2em;
+            }
+            #box{
+                position: absolute;
+                left: 23%;
+            }
+           canvas{
+                position: absolute;
+                top: 0;
+                width: 500px;
+                height: 600px;
+            }
+            #canvas-one{
+                left: 0px; 
+            }
+            .qbox{
+                position: absolute;
+                top: 565px;
+                z-index: 10;
+            }
+            #qqbox1{
+                left: 260px;
+            }
+            #qqbox2{
+                left: 490px;
+            }
+            #qqbox3{
+                left: 720px;
+            }
+            .bkg{
+                width: 200px;
+                height: 550px;
+                border: 2px solid black;
+                position: absolute;
+                top: 30px;
+                overflow: hidden;
+                background: center;
+            }
+            #bkg1{
+                left: 0px;
+            }
+            #bkg2{
+                left: 200px;
+            }
+             #bkg3{
+                left: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="loading">LOADING</p>
+<div id="box">
+<div class="bkg" id="bkg1"><canvas id="canvas-one"></canvas></div>
+
+<div class="bkg" id="bkg2"><canvas id="canvas-two"></canvas></div>
+
+<div class="bkg" id="bkg3"><canvas id="canvas-three"></canvas></div></div>
+      <div id="qqbox1" class="qbox"> <input type="text" id="sbx1" value="dog">
+<button id="btn1">go!</button></div>
+      <div id="qqbox2" class="qbox"> <input type="text" id="sbx2" value="cat">
+<button id="btn2">go!</button></div>
+      <div id="qqbox3" class="qbox"> <input type="text" id="sbx3" value="enter your own!">
+<button id="btn3">go!</button></div>
+
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="flickr.js"></script>
+        <script type="text/javascript" src="therm.js"></script>
+        <script type="text/javascript" src="dogometer.js"></script>
+    </body>
+</html>
+
+
