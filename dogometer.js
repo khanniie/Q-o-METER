@@ -67,6 +67,7 @@ var setBackground = function(searchTerm, boxid){
         var FinalURL = Flickurl + tags + tagmode + jsonFormat;
 
          $.getJSON(FinalURL, function(photos) {
+         	console.log(photos);
               var randomNum = Math.round( Math.random() * 100);
              var photo = photos.photos.photo[randomNum];
 
